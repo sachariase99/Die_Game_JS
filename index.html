@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terningespil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="game">
+        <h1>Dice Game</h1>
+        <div id="scoreboard">
+            <div>Player 1 Score: <span id="player1-score">0</span></div>
+            <div>Round: <span id="current-round">1</span></div>
+            <div>Player 2 Score: <span id="player2-score">0</span></div>
+        </div>
+        <div id="dice">
+            <div>
+                <h2>Player 1</h2>
+                <div class="dice-container">
+                    <div id="player1-die1" class="die">1</div>
+                    <div id="player1-die2" class="die">1</div>
+                </div>
+                <div id="player1-rolls">Old throws <span id="player1-previous-rolls"></span></div>
+            </div>
+            <div>
+                <h2>Player 2</h2>
+                <div class="dice-container">
+                    <div id="player2-die1" class="die">1</div>
+                    <div id="player2-die2" class="die">1</div>
+                </div>
+                <div id="player2-rolls">Old throws <span id="player2-previous-rolls"></span></div>
+            </div>
+        </div>
+        <button id="roll-button">Throw Die's</button>
+        <button id="restart-button">Restart Game</button>
+    </div>
+</body>
+
+</html>
